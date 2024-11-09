@@ -1,0 +1,78 @@
+# Python bytecode and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+**/migrations/
+
+# Ignore environment and system files
+.env
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+*.eggs/
+*.whl
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Static and media files
+staticfiles/
+media/
+
+# Celery and Redis files
+celerybeat-schedule
+*.pid
+
+# Docker files (if using Docker)
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+coverage.xml
+.cache
+
+# Test files
+.tox/
+.nox/
+.pytest_cache/
+
+# MyPy and Pyre
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# JetBrains Rider
+.idea/
+*.iml
