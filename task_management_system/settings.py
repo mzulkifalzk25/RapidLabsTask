@@ -203,5 +203,9 @@ CELERY_BEAT_SCHEDULE = {
     'delete_completed_tasks': {
         'task': 'app.tasks.delete_completed_tasks',
         'schedule': crontab(hour=0, minute=0),
-    }
+    },
+    'test_task': {
+        'task': 'app.tasks.test',
+        'schedule': timedelta(minutes=5)
+    },
 }
