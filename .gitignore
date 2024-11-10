@@ -76,3 +76,8 @@ coverage.xml
 # JetBrains Rider
 .idea/
 *.iml
+
+*.bat
+*.bak
+*.dat
+*.dir

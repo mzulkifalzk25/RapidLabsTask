@@ -5,8 +5,8 @@ from django.conf import settings
 from celery.schedules import crontab
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'NIMARFTS.settings')
-app = Celery('NIMARFTS')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'task_management_system.settings')
+app = Celery('task_management_system')
 app.conf.enable_utc = False
 app.conf.update(timezone = 'Asia/Karachi')
 app.config_from_object(settings, namespace='CELERY')
